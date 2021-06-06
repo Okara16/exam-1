@@ -401,7 +401,7 @@ body {
 }
 
 .tourist-say {
-  background-image: url(/images/bg-5.jpg);
+  background-image: url(../images/bg-5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 120px;
