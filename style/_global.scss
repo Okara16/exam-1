@@ -1,0 +1,31 @@
+body {
+    color: #fff;
+    border: 15px solid #fff;
+    font-family: Josephin Sans, sans-serif;
+}
+
+.btn {
+    font-family: Aleo;
+    font-size: 14px;
+    background: #5474fd;
+    height: 60px;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background: #0721a0;
+}
+
+.btn:active {
+    background: #aa8fd6;
+}
+
+.title-3 {
+    font-family: Aleo;
+    font-size: 36px;
+}
