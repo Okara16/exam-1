@@ -182,6 +182,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 130px;
   background: #5474fd;
 }
 
@@ -230,6 +231,22 @@ body {
   .title__label {
     max-width: 100%;
   }
+  .title__search::-webkit-input-placeholder {
+    display: none;
+    padding-left: 25px;
+  }
+  .title__search:-ms-input-placeholder {
+    display: none;
+    padding-left: 25px;
+  }
+  .title__search::-ms-input-placeholder {
+    display: none;
+    padding-left: 25px;
+  }
+  .title__search::placeholder {
+    display: none;
+    padding-left: 25px;
+  }
 }
 
 * {
@@ -267,7 +284,6 @@ body {
 }
 
 .why-choose-us__desc {
-  font-size: 14px;
   margin-top: 55px;
 }
 
@@ -412,6 +428,8 @@ body {
 
 .tourist-say__container {
   margin-top: 100px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .tourist-say__text {
@@ -432,11 +450,20 @@ body {
   text-transform: uppercase;
 }
 
+.tourist-say__desc {
+  position: relative;
+}
+
 .tourist-say__desc::before {
   content: "“";
-  width: 20px;
-  height: 30px;
+  font-size: 100px;
   color: #5474fd;
+  position: absolute;
+  top: -40px;
+}
+
+.tourist-say__desc::first-letter {
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 375px) {
@@ -455,6 +482,10 @@ body {
     display: block;
     width: 100%;
     position: static;
+  }
+  .tourist-say__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .tourist-say__img {
     display: block;

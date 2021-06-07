@@ -1,7 +1,6 @@
 .choose-us {
     background: url(../images/bg-2.jpg);
     padding-bottom: 120px;
-    // padding-top: 120px;
 }
 
 .container {
@@ -21,7 +20,6 @@
     }
 
     &__desc {
-        font-size: 14px;
         margin-top: 55px;
     }
 
@@ -152,6 +150,7 @@
 
     &__container {
         margin-top: 100px;
+        flex-wrap: nowrap;
     }
 
     &__text {
@@ -166,11 +165,22 @@
         text-transform: uppercase;
     }
 
+    &__desc {
+        position: relative;
+    }
+
+    
     &__desc::before {
         content: "“";
-        width: 20px;
-        height: 30px;
+        font-size: 100px;
         color: #5474fd;
+        position: absolute;
+        top: -40px;
+    
+    }
+
+    &__desc::first-letter {
+        margin-left: 40px;
     }
 
 }
@@ -197,8 +207,17 @@
         position: static;
     }
 
-    .tourist-say__img {
-        display: block;
-        width: 100%;
+
+
+    .tourist-say {
+
+        &__container {
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+        }
     }
 }
