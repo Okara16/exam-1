@@ -491,5 +491,8 @@ body {
     display: block;
     width: 100%;
   }
+  .tourist-say__desc {
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
